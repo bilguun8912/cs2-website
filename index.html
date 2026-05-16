@@ -1,6 +1,198 @@
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="guide.html">Guide</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS2 WORLD</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial;
+    }
+
+    body{
+      background:#0a0a0a;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    header{
+      background:rgba(0,0,0,0.8);
+      padding:20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:2px solid cyan;
+      box-shadow:0 0 20px cyan;
+    }
+
+    header h1{
+      color:cyan;
+      text-shadow:0 0 15px cyan;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:cyan;
+      text-shadow:0 0 10px cyan;
+    }
+
+    .hero{
+      height:90vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+
+      background:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200') center/cover;
+    }
+
+    .hero h2{
+      font-size:70px;
+      color:cyan;
+      text-shadow:0 0 20px cyan;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:24px;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      padding:15px 35px;
+      background:cyan;
+      color:black;
+      text-decoration:none;
+      border-radius:12px;
+      font-weight:bold;
+      box-shadow:0 0 20px cyan;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.1);
+      background:white;
+    }
+
+    .guide{
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    .guide h2{
+      color:cyan;
+      margin-bottom:40px;
+      text-shadow:0 0 15px cyan;
+    }
+
+    .steps{
+      display:flex;
+      justify-content:center;
+      gap:25px;
+      flex-wrap:wrap;
+    }
+
+    .step{
+      background:#111;
+      width:260px;
+      padding:30px;
+      border-radius:20px;
+      border:2px solid cyan;
+      box-shadow:0 0 20px rgba(0,255,255,0.5);
+      transition:0.3s;
+    }
+
+    .step:hover{
+      transform:translateY(-10px);
+      box-shadow:0 0 30px cyan;
+    }
+
+    .step h3{
+      color:cyan;
+      margin-bottom:15px;
+    }
+
+    footer{
+      background:#000;
+      text-align:center;
+      padding:25px;
+      border-top:2px solid cyan;
+      margin-top:50px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <h1>CS2 WORLD</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="guide.html">Guide</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <h2>Counter Strike 2</h2>
+
+  <p>최고의 FPS 게임을 소개합니다</p>
+
+  <a href="about.html" class="btn">
+    게임 소개 보기
+  </a>
+
+</section>
+
+<section class="guide">
+
+  <h2>게임 시작 방법</h2>
+
+  <div class="steps">
+
+    <div class="step">
+      <h3>STEP 1</h3>
+      <p>Steam 설치하기</p>
+    </div>
+
+    <div class="step">
+      <h3>STEP 2</h3>
+      <p>CS2 다운로드하기</p>
+    </div>
+
+    <div class="step">
+      <h3>STEP 3</h3>
+      <p>친구와 함께 플레이하기</p>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>2026 CS2 Website | Bilguun</p>
+</footer>
+
+</body>
+</html>
